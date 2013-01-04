@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Me</title>
+		<link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+		<div id="outer">
+		<div id="wrapper">
+			<div id="menu">
+				<ul>
+					<li class="first"><a href="index.html">Home</a></li>
+					<li><a href="#" style="visibility:hidden">Ser</a></li>
+                    <li><a href="project.html">Projects</a></li>
+					<li><a href="#" style="visibility:hidden">Ser</a></li>
+					<li><a href="research.html">Research</a></li>
+                    <li><a href="#" style="visibility:hidden">Ser</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="#" style="visibility:hidden">Ser</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#" style="visibility:hidden">Ser</a></li>
+					<li class="last"><a href="contact.html">Contact</a></li>
+				</ul>
+				<br class="clearfix" />
+			</div>
+			<div id="header">
+				<div id="logo">
+					<h1>Know Me</h1>
+				</div>
+				<div id="search">
+					<form action="" method="post">
+						<div>
+							<input class="form-text" name="search" size="32" maxlength="64" />	
+						</div>
+					</form>
+				</div>
+			</div>
+			<div id="page">
+				<div id="sidebar">
+
+				</div>
+				<div id="contactcontent">
+					<div class="box">
+						<h3><b>Research Paper</b></h3>
+                        <br />
+                        <br />
+      
+                        <h4><b>Pre-Clustering Algorithm for Anomaly Detection and Clustering that uses variable size buckets</b></h4>
+
+						<p>
+                            Clustering is known as grouping of data based on their similarities. 
+                            This paper introduces an algorithm of k means for clustering of data streams and detection of outliers. 
+                            The introduced technique for detection of outliers is based on distance as well as on time on which they arrive in the cluster. 
+                            This paper also takes into account the selection of k centers and variable size of buckets with the help of which space can be effectively utilized during clustering. 
+                            Most traditional algorithms make clustering a very difficult problem by reducing their quality for a better efficiency. 
+                            This paper indicates that with a small increase in time you can efficiently cluster the data without much loss of quality of data.
+						</p>
+                        <br />
+                        <strong><b>Proposed Method</b></strong>
+                        <br />
+                        <br />
+                        <p>
+                        Method is proposed to cluster the data by means of pre cluster algorithm.
+                            <br /> 
+                        The algorithm includes some k pre clusters, initially the k points which arrive appointed as cluster center then the distance between the k clusters is calculated. Minimum distance between the clusters is diameter of each and every cluster. As a point arrives which doesn’t lie in any cluster then the two clusters having minimum distance are merged and new point is appointed as cluster center.
+                        <br />
+                        The filled cluster which is transferred is checked for outlier detection and finally outlier free data is transferred to the buckets nearest to the cluster and the distance is measured using (1).
+                        <br />
+                            <br />
+
+                        D(CB,CC) =ΣXCi—XBi
+                        <br />
+                            <br />
+                        Where i=1 to p.
+                        <br />
+                            p- Number of dimensions.
+                        <br />
+                            CB- Center of bucket.
+                        <br />
+                            CC- Center of the cluster.
+                        <br />
+                            XCi- Coordinate of ith dimension of center of cluster C in meters.
+                        <br />
+                            XBi- Coordinate of ith dimension of center of Bucket B in meters.
+                        <br />
+                            D- Distance of cluster from bucket in meters.
+                        <br />
+                        <br />
+                            When the bucket gets filled then it is allocated some space from another bucket which is not filled till now.
+                        <br />
+                            But when all the buckets get filled the points are deleted to empty some space in bucket.
+                            </p>
+                        <br class="clearfix" />
+                        <br class="clearfix" />
+
+                        <a href="#">Download Full Paper</a>
+
+					</div>
+					
+					<br class="clearfix" />
+				</div>
+				<br class="clearfix" />
+			</div>
+		</div>
+		<div id="footer">
+			&copy; 2012 by Manish Sharma
+		</div>
+		</div>
+	</body>
+</html>
